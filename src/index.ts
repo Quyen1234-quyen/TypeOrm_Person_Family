@@ -6,7 +6,7 @@ createConnection().then(async connection => {
     // typeorm();
     const app=express();
     console.log("Connect Database");
-    Loader({expressApp: app });
+    await Loader({expressApp: app });
     const PORT=5002;
     app.listen(PORT,()=>{
         console.log(`Started Server at Port :${PORT}`);
