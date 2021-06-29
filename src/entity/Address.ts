@@ -11,7 +11,7 @@ export class Address{
 
     @Column()
 
-    streetNumber:string;
+    streetNumber12:string;
 
     @OneToOne(()=>Person)
     @JoinColumn()
